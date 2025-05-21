@@ -106,8 +106,8 @@ git checkout feature/?
 
 ### 実装
 
-それでは**「新しく」ファイル**を作成し、実装していきましょう！
-絶対新しく作成したファイル内で編集をしてください！他の人が作成したファイルを編集してしまう可能性があります。
+それでは **「新しく」ファイル** を作成し、実装していきましょう！
+絶対新しく作成したファイル内で編集をしてください！既存のファイルをいじると、他の人が作成したファイルを編集してしまう可能性があります。
 
 ![GitHub Clone](./images/ph1-idd-sample-step11.png)
 
@@ -118,6 +118,7 @@ git checkout feature/?
 実装が完了したらadd, commit, pushして編集した内容をGitHubに反映させましょう！
 やり方は[Level 2 テキスト](https://github.com/posse-ap/curriculum/blob/main/PH1/PH1_Git_GitHub_Level_2.md#4-%E3%82%B3%E3%83%B3%E3%83%95%E3%83%AA%E3%82%AF%E3%83%88)を参考にしてください！
 
+コマンドを打ち終わったらGitHubへ移動し、PRを作成しましょう！
 PRの反映先は必ず`main`にしてください！
 
 ![GitHub Clone](./images/ph1-idd-sample-step14.png)
