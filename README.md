@@ -86,11 +86,51 @@ issueを作成した際に番号が自動生成されます。その番号を元
 
 ## 3. PRを作成して依頼を出す
 
+それでは実装に移りましょう！
+VScode上で自分が今mainブランチにいることを確認してください。
+次にGitHub上で作成したブランチをローカルに反映させましょう
+
+```bash
+git fetch
+```
+
+次に自分が作成したブランチへ移動します。
+
+```bash
+git checkout feature/?
+```
+
+すると画面左下が`feature/2`に変わりました！これは自分が作成したブランチへ移動できているということなので、実装の準備は完了しましたね！
+
+![GitHub Clone](./images/ph1-idd-sample-step9.png)
+
+### 実装
+
+それでは**「新しく」ファイル**を作成し、実装していきましょう！
+絶対新しく作成したファイル内で編集をしてください！他の人が作成したファイルを編集してしまう可能性があります。
+
+![GitHub Clone](./images/ph1-idd-sample-step11.png)
+
+こんな感じで実装してみました！クオリティは求めないので、自由に編集してみてください！
+
+![GitHub Clone](./images/ph1-idd-sample-step12.png)
+
+実装が完了したらadd, commit, pushして編集した内容をGitHubに反映させましょう！
+やり方は[Level 2 テキスト](https://github.com/posse-ap/curriculum/blob/main/PH1/PH1_Git_GitHub_Level_2.md#4-%E3%82%B3%E3%83%B3%E3%83%95%E3%83%AA%E3%82%AF%E3%83%88)を参考にしてください！
+
+PRの反映先は必ず`main`にしてください！
+
+![GitHub Clone](./images/ph1-idd-sample-step14.png)
+
 PRを作成したらDiscordにてレビュー依頼をしましょう。
 自分以外のメンバーにコードの変更をレビューしてもらうことで、客観的な視点でコードの改善点等を指摘してもらえます。
 
 今回は縦モクの先輩に対してレビューを依頼します。
-〇〇チャンネルでレビュー依頼をしましょう！
+PRのurlをコピーして、〇〇チャンネルでレビュー依頼をしましょう！
+
+![GitHub Clone](./images/ph1-idd-sample-step15.png)
+
+![GitHub Clone](./images/ph1-idd-sample-step16.png)
 
 ```text
 PRをレビューしてもらってから親ブランチへ反映するという流れは一般的ですが、POSSE内部での開発全てに当てはまるとは限らないのでチームで確認しましょう
@@ -107,19 +147,25 @@ PRをレビューしてもらってから親ブランチへ反映するという
 ph1にてPRの確認依頼を出しているため、approveをしてもらいたいです。
 手順は以下の通りです。
 
-コメントを書く
+`LGTM`コメントを書く
 
-LGTM
-
+![GitHub Clone](./images/ph1-idd-sample-step17.png)
 
 ## 5. 親ブランチへ反映させる
 
 LGTMはもらえましたか？
-実際に確認してみましょう！
+LGTMがもらえたら、PRを親ブランチに反映させましょう！
+Merge Pull Requestボタンをクリックして完了です！
+
+![GitHub Clone](./images/ph1-idd-sample-step18.png)
+
+実際にmainに反映されたか確認しましょう
+もう一度VScodeで`git fetch`をして左のファイル一覧を見てみましょう！
+
+feature/2で作成したファイルが反映されていますね！これで擬似issue駆動開発体験は完了です！！！
 
 ## 最後に
 
 カリキュラムの[「最後に」](https://github.com/posse-ap/curriculum/blob/6c7afdb7073b177c08b9b3a14fee0d9082e97b70/PH1/PH1_Git_GitHub_Level_3.md#%E6%9C%80%E5%BE%8C%E3%81%AB)に目を通してweek3は以上です！お疲れ様でした！
 
 ## Q&A
-
