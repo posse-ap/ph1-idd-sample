@@ -60,6 +60,7 @@ issue作成画面が出現するので、タスク内容を記載していきま
 ## 2. issueをもとにブランチを作成する
 
 issueを作成した際に番号が自動生成されます。その番号を元にブランチを作成するので、issueと作業ブランチが対応関係になります。
+今回は「2」という番号が自動生成されているので、`feature/2`というブランチを作成します！
 
 ![GitHub Clone](./images/ph1-idd-sample-step4.png)
 
@@ -68,22 +69,24 @@ issueを作成した際に番号が自動生成されます。その番号を元
 
 ![GitHub Clone](./images/ph1-idd-sample-step5.png)
 
-画面左側に「main」と書いてあるUIがあるのでクリックしましょう！
+画面左側に「main」と書いてあるボタンがあるのでクリックしましょう！
 
 ![GitHub Clone](./images/ph1-idd-sample-step6.png)
 
 検索バーにブランチ名を入力することで新しくブランチが作成できます。
-今回はissueの番号が「2」だったので、`feature/2`というブランチを作成します。
+繰り返しますが、今回はissueの番号が「2」だったので、`feature/2`というブランチを作成します。
 ここは各自作成したissueの番号を入力してください。
 
 ![GitHub Clone](./images/ph1-idd-sample-step7.png)
 
-入力後「Create branch feature/? from main」をクリックすると、ブランチが作成されます。
+入力後「Create branch feature/? from develop」をクリックすると、ブランチが作成されます。
+
+「Create branch feature/? from `develop`」であって「Create branch feature/? from `main`」ではないので注意してください。
 もし誤った名称のブランチを作成してしまっても、新しく作り直せば問題ありません。
 
 ### 補足
 
-本来はmainブランチ→developブランチ→作業ブランチと切り分けていきますが、あくまで擬似issue駆動開発体験なので、developブランチを切る工程は省略し、mainブランチから作業ブランチを作成します。
+本来はmainブランチ→developブランチ→作業ブランチと切り分けていきますが、あくまで擬似issue駆動開発体験なので、mainブランチからdevelopブランチを切る工程は省略し、最初からdevelopブランチから作業ブランチを作成します。
 
 ![GitHub Clone](./images/ph1-idd-branch.png)
 
@@ -122,9 +125,14 @@ git checkout feature/?
 やり方は[Level 2 テキスト](https://github.com/posse-ap/curriculum/blob/main/PH1/PH1_Git_GitHub_Level_2.md#4-%E3%82%B3%E3%83%B3%E3%83%95%E3%83%AA%E3%82%AF%E3%83%88)を参考にしてください！
 
 コマンドを打ち終わったらGitHubへ移動し、PRを作成しましょう！
-PRの反映先は必ず`main`にしてください！
+PRの反映先は必ず`develop`にしてください！
 
 ![GitHub Clone](./images/ph1-idd-sample-step14.png)
+
+```text
+💡 作業ブランチは「develop」から切ったので反映するのも「develop」になります
+基本的にはPRの反映先は切ったブランチ（親ブランチ）です
+```
 
 PRを作成したらDiscordにてレビュー依頼をしましょう。
 自分以外のメンバーにコードの変更をレビューしてもらうことで、客観的な視点でコードの改善点等を指摘してもらえます。
@@ -163,8 +171,8 @@ Merge Pull Requestボタンをクリックして完了です！
 
 ![GitHub Clone](./images/ph1-idd-sample-step18.png)
 
-実際にmainに反映されたか確認しましょう
-もう一度VScodeで`git fetch`をして左のファイル一覧を見てみましょう！
+実際に`develop`に反映されたか確認しましょう
+`git checkout develop`でdevelopブランチへ移動して、もう一度VScodeで`git fetch`をして左のファイル一覧を見てみましょう！
 
 feature/2で作成したファイルが反映されていますね！これで擬似issue駆動開発体験は完了です！！！
 
