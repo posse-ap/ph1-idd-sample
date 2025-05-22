@@ -73,6 +73,15 @@ issueを作成した際に番号が自動生成されます。その番号を元
 
 ![GitHub Clone](./images/ph1-idd-sample-step6.png)
 
+まずは作業ブランチをどのブランチから派生させるかを選択する必要があります！
+今回はdevelopから派生させたいので、まずdevelopブランチをクリックしましょう！
+
+![GitHub Clone](./images/ph1-idd-sample-step6-choice.png)
+
+
+
+
+
 検索バーにブランチ名を入力することで新しくブランチが作成できます。
 繰り返しますが、今回はissueの番号が「2」だったので、`feature/2`というブランチを作成します。
 ここは各自作成したissueの番号を入力してください。
@@ -192,5 +201,3 @@ feature/2で作成したファイルが反映されていますね！
 ## 最後に
 
 カリキュラムの[「最後に」](https://github.com/posse-ap/curriculum/blob/6c7afdb7073b177c08b9b3a14fee0d9082e97b70/PH1/PH1_Git_GitHub_Level_3.md#%E6%9C%80%E5%BE%8C%E3%81%AB)に目を通してweek3は以上です！お疲れ様でした！
-
-## Q&A
