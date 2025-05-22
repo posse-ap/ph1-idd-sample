@@ -196,4 +196,10 @@ feature/2で作成したファイルが反映されていますね！
 
 ## 最後に
 
+Git、GitHubの操作はただ頭でイメージするだけでは身に付かず、実際に手を動かしたり、分からなかった箇所は先輩に質問したりなどしないと定着しません。
+
+プログラミング言語自体の勉強も重要ですが、今後ハッカソンやチーム開発で活躍していくには間違いなく必要な知識になってくるので分からなかったところは何度も復習してください！
+
+また、分からなかった箇所はここから[質問](https://github.com/posse-ap/curriculum/discussions/categories/git_github)していただけると即座に回答します！
+
 カリキュラムの[「最後に」](https://github.com/posse-ap/curriculum/blob/6c7afdb7073b177c08b9b3a14fee0d9082e97b70/PH1/PH1_Git_GitHub_Level_3.md#%E6%9C%80%E5%BE%8C%E3%81%AB)に目を通してweek3は以上です！お疲れ様でした！
