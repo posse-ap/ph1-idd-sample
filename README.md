@@ -180,7 +180,14 @@ Merge Pull Requestボタンをクリックして完了です！
 実際に`develop`に反映されたか確認しましょう
 `git checkout develop`でdevelopブランチへ移動して、もう一度VScodeで`git fetch`をして左のファイル一覧を見てみましょう！
 
-feature/2で作成したファイルが反映されていますね！これで擬似issue駆動開発体験は完了です！！！
+feature/2で作成したファイルが反映されていますね！
+
+最後にこのタスクが完了したことがわかるようにissueを閉じましょう！
+画像にある通りissueタブからissueを選択し、「Close issue」をクリックして下さい！
+
+![GitHub Clone](./images/ph1-idd-sample-step19.png)
+
+これで擬似issue駆動開発体験は完了です！！！
 
 ## 最後に
 
